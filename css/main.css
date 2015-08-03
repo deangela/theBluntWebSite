@@ -141,17 +141,6 @@ a {
     font-weight: 100;
 }
 
-/*
------------------------------------------------------------
-LOGO STYLES
------------------------------------------------------------
-*/
-
-.logoNav {
-    float: left;
-    padding-right: 20px;
-    margin-left: 20px;
-}
 
 
 /*
@@ -231,39 +220,7 @@ BUTTONS STYLES
 }
 
 
-/*
------------------------------------------------------------
-VIDEO STYLES
------------------------------------------------------------
-*/
 
-video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    margin-bottom: 3%;
-    width: 50%;
-    box-shadow: 0px 15px 40px #888888;
-    
-}
-
-/*
------------------------------------------------------------
-IMAGE STYLES
------------------------------------------------------------
-*/
-
-.comparisonImg {
-    border-radius: 5px;
-    display: block;
-    margin-bottom: 22px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5%;
-    box-shadow: 0px 5px 20px #888888;
-}
 
 
 /*
@@ -271,22 +228,6 @@ IMAGE STYLES
 MAIN NAVIGATION BAR
 -----------------------------------------------------------
 */
-
-.mainNav {
-    float: left;
-    width: 100%;
-    margin:0;
-    padding:0; 
-    background: #fff;
-    border-bottom: 3px solid #004161;
-    border-radius: 10px;
-}
-
-.mainNav li {
-    display:inline-block;
-    padding:0;
-    margin:0;
-}
 
 .mainNav a:link, 
 .mainNav a:visited {
@@ -337,29 +278,7 @@ MAIN NAVIGATION BAR
     word-spacing: 15px;
 }
 
-/*
------------------------------------------------------------
-COLUMN STYLES
------------------------------------------------------------
-*/
 
-.col1-3 {
-    width: 33.33%;
-}
-
-.col2-3 {
-    width: 66.66%;
-}
-
-.col1-3,
-.col2-3 {
-    display: inline-block;
-    vertical-align: text-TOP;
-    padding-top: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
-    
-}
 
 /*
 -----------------------------------------------------------
@@ -414,6 +333,126 @@ footer {
     font-size: 1.2em;
 }
 
+
+/*
+-----------------------------------------------------------
+MEDIA QUERIES
+-----------------------------------------------------------
+*/
+
+/* PHONE VERSION */
+@media only screen and (min-width: 320px) {
+.mainNav li {
+        width: 100%;
+    }
+
+    img, video {
+        width: 100%;
+    }
+    .col1-3 {
+    width: 100%;
+    }
+
+    .col2-3 {
+        width: 100%;
+    }
+
+    .col1-3,
+    .col2-3 {
+        display: inline-block;
+        vertical-align: text-TOP;
+        padding-top: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        
+    }
+}
+
+/* TABLET VERSION */
+@media only screen and (min-width: 400px) {
+    /*
+    -----------------------------------------------------------
+    LOGO STYLES
+    -----------------------------------------------------------
+    */
+
+    .logoNav {
+        float: left;
+        padding-right: 20px;
+        margin-left: 20px;
+    }
+
+
+.mainNav {
+    float: left;
+    width: 100%;
+    margin:0;
+    padding:0; 
+    background: #fff;
+    border-bottom: 3px solid #004161;
+    border-radius: 10px;
+}
+
+.mainNav li {
+    display:inline-block;
+    padding:0;
+    margin:0;
+}
+
+
+    /*
+    -----------------------------------------------------------
+    VIDEO STYLES
+    -----------------------------------------------------------
+    */
+
+    video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        width: 50%;
+        box-shadow: 0px 15px 40px #888888;
+        
+    }
+
+    /*
+    -----------------------------------------------------------
+    IMAGE STYLES
+    -----------------------------------------------------------
+    */
+
+    .comparisonImg {
+        border-radius: 5px;
+        display: block;
+        margin-bottom: 22px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5%;
+        box-shadow: 0px 5px 20px #888888;
+    }
+
+    .col1-3 {
+    width: 33.33%;
+    }
+
+    .col2-3 {
+        width: 66.66%;
+    }
+
+    .col1-3,
+    .col2-3 {
+        display: inline-block;
+        vertical-align: text-TOP;
+        padding-top: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        
+    }
+    
+}
 
 
 
